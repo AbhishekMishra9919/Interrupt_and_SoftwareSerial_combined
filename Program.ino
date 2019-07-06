@@ -62,8 +62,8 @@ void loop() {
   // Serial is only for debugging.
   Serial.println("Take data in 10 seconds.");
   ss.attachInterrupt(readPulsioximeter);
-  delay(10000);
-  ss.detachInterrupt();
+  delay(10000); // to take the data within the stipulated period of time.
+  ss.detachInterrupt(); // this is to prevent the human error of reporting the data again.
   a=eHealth.getBPM();
   b=eHealth.getOxygenSaturation();
   //void *hash // implement a bit later.
