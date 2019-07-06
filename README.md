@@ -3,7 +3,7 @@ A project that aims to use both Interrupt and Software Serial together.
 
 Recently I was working on the Arduino Uno Board, where I wanted to do these three things simulatneously:
   1. Take the readings from a Pulsioximeter which was connected to a fixed Interrupt Pin(Pin - 6 on the Physical ).
-  2. Encrypt the data.
+  2. Encrypt the data using an ECC-shared public key that was generated with the AES-type encryption.
   3. Send the commands and data along a Software Serial Channel to the ESP8266.
   4. Be able to debug the whole process.
 
